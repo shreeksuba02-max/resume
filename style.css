@@ -1,0 +1,378 @@
+
+/* ===== GENERAL ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eeeeF2, #d5d5dc, #f5f5f7);
+    color: #29292e;
+    transition: 0.3s;
+}
+
+
+/* ===== HEADER ===== */
+
+header {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #17181c,
+        #414249,
+        #777980,
+        #292a30
+    );
+    color: white;
+    padding: 30px;
+    border-radius: 18px;
+    border: 2px solid #c0c0c8;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    letter-spacing: 2px;
+    color: #f5f5f7;
+    text-shadow: 2px 2px 5px #999;
+}
+
+header img {
+    border-radius: 50%;
+    border: 5px solid #d4d4da;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+
+/* ===== MAIN ===== */
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ===== SECTIONS ===== */
+
+section {
+    width: 100%;
+    margin: 22px 0;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #eeeeF2, #fafafa);
+    border: 1px solid #c8c8ce;
+    border-left: 6px solid #777980;
+    border-radius: 15px;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.10);
+    transition: 0.3s;
+}
+
+section:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    transform: translateY(-2px);
+}
+
+
+/* ===== HEADINGS ===== */
+
+h2 {
+    color: #414249;
+    border-bottom: 2px solid #c0c0c8;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #393a40;
+}
+
+
+/* ===== EDUCATION TABLE ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: linear-gradient(135deg, #44454b, #777980);
+    color: white;
+    padding: 15px;
+    border: 1px solid #a7a7ad;
+}
+
+td {
+    padding: 15px;
+    border: 1px solid #d0d0d5;
+}
+
+tr:nth-child(even) {
+    background: #e5e5e9;
+}
+
+tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+
+/* ===== INPUT FIELDS ===== */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #bfc0c6;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #ffffff;
+    color: #29292e;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #55565e;
+    box-shadow: 0 0 7px rgba(80,80,90,0.25);
+}
+
+textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+
+/* ===== PERSONAL DETAILS ===== */
+
+.personal-details {
+    width: 65%;
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 18px 25px;
+}
+
+.personal-details h2 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.personal-details input[type="text"],
+.personal-details input[type="email"],
+.personal-details input[type="tel"],
+.personal-details textarea {
+    width: 85%;
+    padding: 9px;
+    font-size: 14px;
+}
+
+.personal-details textarea {
+    min-height: 50px;
+}
+
+.personal-details label {
+    font-weight: bold;
+    color: #414249;
+}
+
+
+/* ===== RADIO AND CHECKBOX ===== */
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #55565e;
+    cursor: pointer;
+}
+
+
+/* ===== BUTTONS ===== */
+
+button {
+    background: linear-gradient(135deg, #55565e, #24252a, #777980);
+    color: white;
+    padding: 11px 22px;
+    border: 1px solid #aeb0b7;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #999ba2, #55565e);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+
+/* ===== THEME BUTTON ===== */
+
+#themeToggle {
+    background: linear-gradient(135deg, #eeeeF2, #c0c0c8);
+    color: #24252a;
+    border: 1px solid #999ba2;
+    font-weight: bold;
+}
+
+
+/* ===== VALIDATION ===== */
+
+small {
+    color: #c62828;
+    display: block;
+    margin-top: 5px;
+}
+
+#formMessage {
+    color: #26743b;
+    font-weight: bold;
+}
+
+#charCount {
+    color: #55565e;
+    font-size: 13px;
+}
+
+
+/* ===== READ MORE / READ LESS ===== */
+
+.read-text {
+    line-height: 1.8;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.read-text.expanded {
+    display: block;
+    overflow: visible;
+}
+
+.read-btn {
+    background: linear-gradient(135deg, #24252a, #55565e);
+    color: white;
+}
+
+.read-btn:hover {
+    background: linear-gradient(135deg, #999ba2, #55565e);
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    background: linear-gradient(135deg, #17181c, #55565e, #292a30);
+    color: white;
+    border: 1px solid #aeb0b7;
+    border-radius: 12px;
+}
+
+
+/* ===== DARK THEME ===== */
+
+body.dark {
+    background: #111216;
+    color: #eeeeF2;
+}
+
+body.dark header {
+    background: linear-gradient(135deg, #08090b, #303138, #55565e);
+    color: white;
+}
+
+body.dark section {
+    background: linear-gradient(135deg, #292a30, #414249);
+    color: white;
+    border-color: #999ba2;
+}
+
+body.dark h2 {
+    color: #e0e0e5;
+}
+
+body.dark h3,
+body.dark .personal-details label {
+    color: #f0f0f2;
+}
+
+body.dark input,
+body.dark textarea {
+    background: #eeeeF2;
+    color: #29292e;
+}
+
+body.dark th {
+    background: #292a30;
+    color: white;
+}
+
+body.dark tr:nth-child(even) {
+    background: #d9d9df;
+    color: #29292e;
+}
+
+body.dark #charCount {
+    color: #d0d0d5;
+}
+
+body.dark .read-btn {
+    background: #c0c0c8;
+    color: #202126;
+}
+
+body.dark footer {
+    background: linear-gradient(135deg, #08090b, #303138);
+    color: white;
+}
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .personal-details {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .personal-details input[type="text"],
+    .personal-details input[type="email"],
+    .personal-details input[type="tel"],
+    .personal-details textarea {
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}
